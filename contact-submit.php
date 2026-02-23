@@ -42,12 +42,46 @@ if (is_readable($envPath)) {
 $recaptchaSecret = getenv('RECAPTCHA_SECRET') ?: '6LdfDy8sAAAAAEzr8cYgebNcewzkVGY3_RgFJZbv';
 $contactEmail = getenv('CONTACT_EMAIL') ?: 'moemortezaei@gmail.com';
 $fromEmail = getenv('CONTACT_FROM_EMAIL') ?: 'do-not-reply@webpulse.ca';
-$redirectBase = '/contact-us';
+$defaultRedirectBase = '/contact-us';
+$redirectBase = $defaultRedirectBase;
+
+function sanitize_redirect_base(string $value, string $fallback): string
+{
+    if ($value === '' || preg_match('/[\r\n]/', $value)) {
+        return $fallback;
+    }
+
+    $parts = parse_url($value);
+    if (!is_array($parts)) {
+        return $fallback;
+    }
+
+    if (isset($parts['scheme']) || isset($parts['host'])) {
+        return $fallback;
+    }
+
+    $path = (string) ($parts['path'] ?? '');
+    if ($path === '' || substr($path, 0, 1) !== '/') {
+        return $fallback;
+    }
+
+    if (!preg_match('#^/[A-Za-z0-9/_-]*$#', $path)) {
+        return $fallback;
+    }
+
+    $path = rtrim($path, '/');
+    return $path === '' ? '/' : $path;
+}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ' . $redirectBase);
     exit;
 }
+
+$redirectBase = sanitize_redirect_base(
+    trim((string) ($_POST['redirect_to'] ?? '')),
+    $defaultRedirectBase
+);
 
 function redirect_with_error(string $base): void
 {

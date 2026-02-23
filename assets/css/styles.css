@@ -98,6 +98,15 @@ a:focus-visible {
   line-height: 1.25;
 }
 
+.quick-live {
+  color: #11406c;
+  font-size: 0.9rem;
+}
+
+.section-quick-form .section-header {
+  align-items: center;
+}
+
 .live-dot {
   width: 0.6rem;
   height: 0.6rem;

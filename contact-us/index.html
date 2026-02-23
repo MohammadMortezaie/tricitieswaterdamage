@@ -6,6 +6,7 @@
   <title>Emergency Water Damage Contact | (604) 800-3900</title>
   <meta name="description" content="Contact Tri Cities Water Damage for 24/7 emergency service in Coquitlam, Port Coquitlam, and Port Moody. Call now for immediate extraction and restoration support.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="google-site-verification" content="JJYKKp79R3PCkb4DlkaS4XHj-N6jAtNhVlgPwVGUxXY">
   <meta name="geo.region" content="CA-BC">
   <meta name="geo.placename" content="Coquitlam">
   <meta name="ICBM" content="49.2838, -122.7932">
@@ -30,7 +31,17 @@
   <meta name="twitter:description" content="24/7 live dispatch for emergency extraction and restoration in Tri Cities BC.">
   <meta name="twitter:image" content="https://tricitieswaterdamage.ca/assets/img/optimized/water-damage-in-roof-optimized.jpg">
 
-  <script type="application/ld+json">
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K7FFMKK7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K7FFMKK7P9');
+  </script>
+
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -167,19 +178,19 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="contact-title">
+    <section class="section section-quick-form" aria-labelledby="contact-title">
       <div class="container">
         <div class="section-header" data-reveal>
           <div>
-            <span class="eyebrow">Request Service</span>
-            <h2 id="contact-title">Send an Emergency Request</h2>
+            <span class="eyebrow">Priority Callback Form</span>
+            <h2 id="contact-title">Free Inspection Now</h2>
           </div>
-          <p>Use this form for fast callback. For active flooding and urgent safety concerns, call immediately.</p>
+          <p class="live-status quick-live"><span class="live-dot" aria-hidden="true"></span>Technician Available</p>
         </div>
 
         <div class="contact-grid">
           <article class="glass contact-box" data-reveal>
-            <h3>Emergency Contact Form</h3>
+            <h3>Send Your Message</h3>
             <form action="/contact-submit.php" method="post" data-contact-form data-sitekey="6LdfDy8sAAAAAD1wHs3uaX6lGxw3AWb0IiPTN816">
               <div class="form-row">
                 <div>
@@ -197,11 +208,12 @@
                 <textarea id="message" name="message" placeholder="Tell us what happened and how we can help you." required></textarea>
               </div>
 
+              <input type="hidden" name="redirect_to" value="/contact-us">
               <input type="hidden" name="recaptcha_token" value="">
               <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;">
 
-              <button class="btn btn-primary" type="submit">Submit Emergency Request</button>
-              <p class="form-note">Protected by reCAPTCHA v3. By submitting, you consent to be contacted about your emergency request.</p>
+              <button class="btn btn-primary" type="submit">Submit Free Inspection Request</button>
+              <p class="form-note">Fast response for water extraction, drying, and cleanup requests across Tri Cities BC.</p>
               <p class="form-status" data-form-status aria-live="polite"></p>
             </form>
           </article>
