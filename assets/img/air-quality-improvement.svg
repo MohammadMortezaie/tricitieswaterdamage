@@ -1,0 +1,32 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Indoor air quality improvement service illustration</title>
+  <desc id="desc">Illustration showing airflow purification and indoor environment monitoring after water damage restoration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8f3ff"/>
+      <stop offset="1" stop-color="#d6e9ff"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="90" y1="320" x2="1080" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3f9fff" stop-opacity="0.05"/>
+      <stop offset="0.45" stop-color="#2f88ed" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#0f66cd" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="26" fill="url(#bg)"/>
+  <rect x="120" y="160" width="420" height="460" rx="26" fill="#ffffff" stroke="#b9d8ff"/>
+  <rect x="180" y="220" width="300" height="90" rx="16" fill="#edf6ff" stroke="#c5e0ff"/>
+  <rect x="180" y="340" width="300" height="90" rx="16" fill="#edf6ff" stroke="#c5e0ff"/>
+  <rect x="180" y="460" width="300" height="90" rx="16" fill="#edf6ff" stroke="#c5e0ff"/>
+  <circle cx="250" cy="265" r="18" fill="#34be84"/>
+  <circle cx="250" cy="385" r="18" fill="#29a0ff"/>
+  <circle cx="250" cy="505" r="18" fill="#6a79ff"/>
+  <path d="M580 255C690 225 760 305 860 285C945 269 1010 215 1110 245" stroke="url(#flow)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M580 370C700 330 790 420 905 392C980 373 1030 325 1110 352" stroke="url(#flow)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M580 490C710 440 830 540 952 512C1020 496 1066 470 1110 488" stroke="url(#flow)" stroke-width="18" stroke-linecap="round"/>
+  <rect x="650" y="170" width="420" height="450" rx="24" fill="#f8fbff" stroke="#bedcff"/>
+  <rect x="720" y="250" width="280" height="300" rx="20" fill="#ffffff" stroke="#c9e3ff"/>
+  <path d="M760 310H960" stroke="#8bbfff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M760 360H940" stroke="#8bbfff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M760 410H915" stroke="#8bbfff" stroke-width="10" stroke-linecap="round"/>
+  <rect x="760" y="458" width="170" height="38" rx="12" fill="#0f6ee0"/>
+</svg>

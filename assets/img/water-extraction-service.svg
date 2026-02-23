@@ -1,0 +1,17 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">High-capacity water extraction equipment</title>
+  <desc id="desc">Illustration showing water extraction and drying machinery for flood cleanup.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07182a" />
+      <stop offset="1" stop-color="#10345a" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" rx="24" fill="url(#bg)" />
+  <rect x="120" y="170" width="250" height="220" rx="24" fill="#0b2238" stroke="#73d8ff" stroke-opacity="0.6" />
+  <circle cx="205" cy="350" r="46" fill="#45bfff" fill-opacity="0.28" stroke="#86e5ff" />
+  <rect x="410" y="210" width="370" height="110" rx="20" fill="#0a1d30" stroke="#73d8ff" stroke-opacity="0.6" />
+  <path d="M450 266H730" stroke="#8ce7ff" stroke-width="10" stroke-linecap="round" />
+  <path d="M360 280C450 280 442 260 480 220" stroke="#89e4ff" stroke-width="8" stroke-linecap="round" />
+  <path d="M0 436C180 386 260 500 426 470C570 444 676 348 900 410V560H0V436Z" fill="#39bffd" fill-opacity="0.22" />
+</svg>

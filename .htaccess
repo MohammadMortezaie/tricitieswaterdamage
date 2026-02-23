@@ -1,0 +1,32 @@
+Options -Indexes -MultiViews
+DirectorySlash Off
+
+# Protect local environment file from web access.
+<Files ".env">
+  Require all denied
+</Files>
+
+RewriteEngine On
+
+# Remove explicit index.html from URL.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Remove .html extension from requested URLs.
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Enforce canonical no-trailing-slash URLs (except root).
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve folder/index.html when clean path is requested.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.+)$ /$1/index.html [L]
+
+# Optional: route extensionless files (e.g., /about -> /about.html) if used later.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ /$1.html [L]

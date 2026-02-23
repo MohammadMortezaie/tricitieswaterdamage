@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Tri Cities Water Damage Favicon</title>
+  <desc id="desc">Blue square icon with white house and water drop mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b7bff"/>
+      <stop offset="100%" stop-color="#004fb8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="url(#bg)"/>
+  <path d="M32 14 16 28h4v18h9V35h6v11h9V28h4L32 14z" fill="#ffffff" opacity="0.97"/>
+  <path d="M32 24c-4 5-6 8-6 11a6 6 0 0 0 12 0c0-3-2-6-6-11z" fill="#cae5ff"/>
+</svg>

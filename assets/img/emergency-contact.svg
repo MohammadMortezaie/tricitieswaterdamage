@@ -1,0 +1,18 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">24 7 emergency restoration support</title>
+  <desc id="desc">Abstract emergency contact and response illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091725"/>
+      <stop offset="1" stop-color="#0f2e4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" rx="24" fill="url(#bg)" />
+  <rect x="170" y="120" width="290" height="320" rx="26" fill="#0a1f33" stroke="#74d8ff" stroke-opacity="0.6"/>
+  <rect x="225" y="170" width="180" height="200" rx="18" fill="#123654"/>
+  <path d="M265 250C285 285 315 315 353 335" stroke="#97e9ff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M535 180H760" stroke="#8ce5ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M535 230H720" stroke="#8ce5ff" stroke-width="10" stroke-linecap="round" opacity="0.75"/>
+  <path d="M535 280H780" stroke="#8ce5ff" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <path d="M0 440C170 390 290 530 450 492C620 450 730 360 900 410V560H0V440Z" fill="#3ac2ff" fill-opacity="0.2"/>
+</svg>
