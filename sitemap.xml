@@ -31,6 +31,11 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://tricitieswaterdamage.ca/flooding</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
     <loc>https://tricitieswaterdamage.ca/emergency-plumbing-issues</loc>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
