@@ -241,6 +241,14 @@ a:focus-visible {
   color: var(--foreground-muted);
 }
 
+.quick-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.72rem;
+}
+
 .section-quick-form .section-header {
   align-items: center;
 }
