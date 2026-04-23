@@ -253,6 +253,10 @@ a:focus-visible {
   align-items: center;
 }
 
+.section-quick-form {
+  scroll-margin-top: 6rem;
+}
+
 .live-dot {
   width: 0.58rem;
   height: 0.58rem;
